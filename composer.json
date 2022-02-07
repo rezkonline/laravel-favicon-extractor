@@ -1,0 +1,42 @@
+{
+    "name": "rezkonline/laravel-favicon-extractor",
+    "description": "A favicon extractor for Laravel",
+    "keywords": [
+        "rezkonline",
+        "laravel-favicon-extractor",
+        "favicon"
+    ],
+    "homepage": "https://github.com/rezkonline/laravel-favicon-extractor",
+    "license": "MIT",
+    "require": {
+        "php" : "^7.0|^8.0",
+        "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0",
+        "graham-campbell/guzzle-factory": "^3.0|^4.0|^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2|^7.0|^8.0|^9.0",
+        "orchestra/testbench": "~3.5.0|~3.6.0",
+        "mockery/mockery": "^1.1",
+        "friendsofphp/php-cs-fixer": "^2.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rezkonline\\LaravelFaviconExtractor\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rezkonline\\LaravelFaviconExtractor\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rezkonline\\LaravelFaviconExtractor\\FaviconExtractorServiceProvider"
+            ],
+            "aliases": {
+                "FaviconExtractor": "Rezkonline\\LaravelFaviconExtractor\\Facades\\FaviconExtractor"
+            }
+        }
+    }
+}
